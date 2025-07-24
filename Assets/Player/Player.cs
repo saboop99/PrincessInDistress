@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //Criando vari�veis de velocidade, for�a do pulo, Rigidbody para ter fisica e a dire��o do movimento
+    //Criando vari�veis de velocidade, força do pulo, Rigidbody para ter fisica e a direção do movimento
     public float moveSpeed = 5f;
-    public float jumpForce = 10f;
+    public float jumpForce = 100f;
+    private bool isGrounded = false;
 
     private Rigidbody2D rb;
     private Vector2 movement;
@@ -18,22 +19,32 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        // Coleta o input do teclado (cl�ssico)
+        // Coleta o input do teclado (clássico)
         movement.x = Input.GetAxisRaw("Horizontal");
-        //movement.y = Input.GetAxisRaw("Vertical");
+        
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            Console.WriteLine("espa�o");
-            // Aplica for�a de pulo verticalmente
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            //Console.WriteLine("espaço");
+            // Aplica força de pulo verticalmente
+            rb.AddForce(Vector2.up * jumpForce);
+            //rb.AddForce(new Vector2(rb.linearVelocity.x, jumpForce));
+
         }
     }
 
-    // M�todo FixedUpdate � chamado em intervalos fixos, ideal para f�sica e movimenta��o com Rigidbody
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+
+    // Método FixedUpdate é chamado em intervalos fixos, ideal para física e movimentação com Rigidbody
     void FixedUpdate()
     {
-        // Move o Rigidbody2D aplicando a dire��o e velocidade desejada
+        // Move o Rigidbody2D aplicando a direção e velocidade desejada
         // Multiplica pelo deltaTime para manter o movimento consistente em diferentes framerates
         rb.MovePosition(rb.position + new Vector2(movement.x, 0) * moveSpeed * Time.fixedDeltaTime);
     }
