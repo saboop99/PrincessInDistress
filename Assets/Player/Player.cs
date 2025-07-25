@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //Criando vari�veis de velocidade, força do pulo, Rigidbody para ter fisica e a direção do movimento
+    //Criando variáveis de velocidade, força do pulo, Rigidbody para ter fisica, direção do movimento e bool para checagem de pulo
     public float moveSpeed = 5f;
     public float jumpForce = 100f;
     private bool isGrounded = false;
@@ -23,11 +23,15 @@ public class Player : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (isGrounded == true)
+            {
+                rb.AddForce(Vector2.up * jumpForce);
+            }
             //Console.WriteLine("espaço");
             // Aplica força de pulo verticalmente
-            rb.AddForce(Vector2.up * jumpForce);
+            
             //rb.AddForce(new Vector2(rb.linearVelocity.x, jumpForce));
 
         }
@@ -39,6 +43,12 @@ public class Player : MonoBehaviour
         {
             isGrounded = true;
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+            isGrounded = false;
     }
 
     // Método FixedUpdate é chamado em intervalos fixos, ideal para física e movimentação com Rigidbody
