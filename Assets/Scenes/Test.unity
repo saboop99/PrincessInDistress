@@ -297,8 +297,8 @@ GameObject:
   m_Component:
   - component: {fileID: 843409736}
   - component: {fileID: 843409735}
-  - component: {fileID: 843409737}
   - component: {fileID: 843409738}
+  - component: {fileID: 843409739}
   m_Layer: 0
   m_Name: Door-2
   m_TagString: Untagged
@@ -377,19 +377,6 @@ Transform:
   - {fileID: 1533633947}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &843409737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 843409734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f9cb23830374740bb70ad85af170f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorTeleport: {fileID: 20390061}
 --- !u!61 &843409738
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -436,6 +423,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &843409739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843409734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f9cb23830374740bb70ad85af170f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorTeleport: {fileID: 20390061}
 --- !u!1 &1209063405
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,8 +564,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1558257766}
   - component: {fileID: 1558257765}
-  - component: {fileID: 1558257767}
   - component: {fileID: 1558257768}
+  - component: {fileID: 1558257769}
   m_Layer: 0
   m_Name: Door-1
   m_TagString: Untagged
@@ -644,19 +644,6 @@ Transform:
   - {fileID: 20390061}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1558257767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558257764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f9cb23830374740bb70ad85af170f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorTeleport: {fileID: 1533633947}
 --- !u!61 &1558257768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -703,6 +690,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1558257769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558257764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f9cb23830374740bb70ad85af170f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorTeleport: {fileID: 1533633947}
 --- !u!1 &1704556983
 GameObject:
   m_ObjectHideFlags: 0
