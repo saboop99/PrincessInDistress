@@ -1,0 +1,1209 @@
+fileFormatVersion: 2
+guid: a1f8d3894a3e2b64485643d6f7024809
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1296261535219152962
+    second: strokedungeon0005_0
+  - first:
+      213: 4790368909974301844
+    second: strokedungeon0005_1
+  - first:
+      213: 6915566115937308918
+    second: strokedungeon0005_2
+  - first:
+      213: 1463381669011576796
+    second: strokedungeon0005_3
+  - first:
+      213: -8913310694713623627
+    second: strokedungeon0005_4
+  - first:
+      213: 2197618421925501963
+    second: strokedungeon0005_5
+  - first:
+      213: -8740809466918335119
+    second: strokedungeon0005_6
+  - first:
+      213: -7146032144369614180
+    second: strokedungeon0005_7
+  - first:
+      213: -6374269625992355272
+    second: strokedungeon0005_8
+  - first:
+      213: 7425343065819380044
+    second: strokedungeon0005_9
+  - first:
+      213: 8373244622768896940
+    second: strokedungeon0005_10
+  - first:
+      213: -7109325920427771445
+    second: strokedungeon0005_11
+  - first:
+      213: 3598170274630907418
+    second: strokedungeon0005_12
+  - first:
+      213: -7267235900588684688
+    second: strokedungeon0005_13
+  - first:
+      213: 2030632349554384100
+    second: strokedungeon0005_14
+  - first:
+      213: -7985747106494288101
+    second: strokedungeon0005_15
+  - first:
+      213: -4230191498426922991
+    second: strokedungeon0005_16
+  - first:
+      213: 579027788859913420
+    second: strokedungeon0005_17
+  - first:
+      213: 7579343505740127562
+    second: strokedungeon0005_18
+  - first:
+      213: 2609909467028786362
+    second: strokedungeon0005_19
+  - first:
+      213: -5253515807036223405
+    second: strokedungeon0005_20
+  - first:
+      213: -2347762396768916915
+    second: strokedungeon0005_21
+  - first:
+      213: -4729475804285866647
+    second: strokedungeon0005_22
+  - first:
+      213: -4672467210827859314
+    second: strokedungeon0005_23
+  - first:
+      213: 8324647885794132382
+    second: strokedungeon0005_24
+  - first:
+      213: 2857711245029458045
+    second: strokedungeon0005_25
+  - first:
+      213: 4692210308840970370
+    second: strokedungeon0005_26
+  - first:
+      213: -4128995659433071996
+    second: strokedungeon0005_27
+  - first:
+      213: 8177969041693451994
+    second: strokedungeon0005_28
+  - first:
+      213: -1053444350168247572
+    second: strokedungeon0005_29
+  - first:
+      213: 8899153600366618424
+    second: strokedungeon0005_30
+  - first:
+      213: -4182843261658142318
+    second: strokedungeon0005_31
+  - first:
+      213: 1219394440860149476
+    second: strokedungeon0005_32
+  - first:
+      213: -7902122168562295290
+    second: strokedungeon0005_33
+  - first:
+      213: -7375163785039537190
+    second: strokedungeon0005_34
+  - first:
+      213: -8299009892124209030
+    second: strokedungeon0005_35
+  - first:
+      213: -2015053665637964464
+    second: strokedungeon0005_36
+  - first:
+      213: -8662564883722613410
+    second: strokedungeon0005_37
+  - first:
+      213: -3155729947572245479
+    second: strokedungeon0005_38
+  - first:
+      213: 235573178920590759
+    second: strokedungeon0005_39
+  - first:
+      213: 9063394721651586155
+    second: strokedungeon0005_40
+  - first:
+      213: -1771334236080136064
+    second: strokedungeon0005_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: strokedungeon0005_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1834
+        width: 159
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2487db69ffe3df110800000000000000
+      internalID: 1296261535219152962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_1
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1792
+        width: 159
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ce716a42fca7240800000000000000
+      internalID: 4790368909974301844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_2
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1812
+        width: 54
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0db210eb609ff50800000000000000
+      internalID: 6915566115937308918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_3
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1819
+        width: 154
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7d048efd9fe4410800000000000000
+      internalID: 1463381669011576796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_4
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1820
+        width: 154
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb77ecd52f8d4480800000000000000
+      internalID: -8913310694713623627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_5
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1819
+        width: 153
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c59beaf428f7e10800000000000000
+      internalID: 2197618421925501963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_6
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1808
+        width: 77
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d06f2c91862b680800000000000000
+      internalID: -8740809466918335119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_7
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 1808
+        width: 76
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92835140a134dc90800000000000000
+      internalID: -7146032144369614180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_8
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 1808
+        width: 76
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832e9282c8b0a87a0800000000000000
+      internalID: -6374269625992355272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_9
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1418
+        width: 153
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49f29d5d2e1c0760800000000000000
+      internalID: 7425343065819380044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_10
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1421
+        width: 128
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabf69dfe9db33470800000000000000
+      internalID: 8373244622768896940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_11
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1413
+        width: 135
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9fc600eb9965d90800000000000000
+      internalID: -7109325920427771445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_12
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1413
+        width: 136
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16beb40dc44fe130800000000000000
+      internalID: 3598170274630907418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_13
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1413
+        width: 136
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a027ea377952b90800000000000000
+      internalID: -7267235900588684688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_14
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1413
+        width: 136
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec1b98fc514e2c10800000000000000
+      internalID: 2030632349554384100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_15
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1424
+        width: 215
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fed43215dec2190800000000000000
+      internalID: -7985747106494288101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_16
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 1424
+        width: 216
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118c264ae375b45c0800000000000000
+      internalID: -4230191498426922991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_17
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 918
+        width: 669
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc43316c4be190800800000000000000
+      internalID: 579027788859913420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_18
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 995
+        width: 123
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ddd4ae2cc3f2960800000000000000
+      internalID: 7579343505740127562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_19
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 984
+        width: 116
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc0e2615d2483420800000000000000
+      internalID: 2609909467028786362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_20
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 1023
+        width: 333
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350d4b33533c717b0800000000000000
+      internalID: -5253515807036223405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_21
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 534
+        width: 236
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4aa1930a821b6fd0800000000000000
+      internalID: -2347762396768916915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_22
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 712
+        width: 333
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d6cb750d68d5eb0800000000000000
+      internalID: -4729475804285866647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_23
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 515
+        width: 115
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8af1f9d3df082fb0800000000000000
+      internalID: -4672467210827859314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_24
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 502
+        width: 124
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9147f07527178370800000000000000
+      internalID: 8324647885794132382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_25
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 533
+        width: 186
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70ce9e8c31a8a720800000000000000
+      internalID: 2857711245029458045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_26
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 47
+        width: 280
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28854ed5a641e1140800000000000000
+      internalID: 4692210308840970370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_27
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 213
+        width: 149
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48aac58f25cd2b6c0800000000000000
+      internalID: -4128995659433071996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_28
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 204
+        width: 149
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6a742c38bfd7170800000000000000
+      internalID: 8177969041693451994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_29
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 339
+        width: 301
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce25495e1f96161f0800000000000000
+      internalID: -1053444350168247572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_30
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 257
+        width: 80
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837ad7fbc05208b70800000000000000
+      internalID: 8899153600366618424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_31
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 239
+        width: 30
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 299eab5173e83f5c0800000000000000
+      internalID: -4182843261658142318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_32
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 49
+        width: 97
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e62e8888c82ce010800000000000000
+      internalID: 1219394440860149476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_33
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 53
+        width: 60
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60eda1341c5065290800000000000000
+      internalID: -7902122168562295290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_34
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 40
+        width: 43
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb9460ec9726a990800000000000000
+      internalID: -7375163785039537190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_35
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 55
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70db70297ef3dc80800000000000000
+      internalID: -8299009892124209030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_36
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 56
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055ec480e571904e0800000000000000
+      internalID: -2015053665637964464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_37
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 56
+        width: 73
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5dc0fd622368c780800000000000000
+      internalID: -8662564883722613410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_38
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 56
+        width: 52
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ce4eb15589434d0800000000000000
+      internalID: -3155729947572245479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_39
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 55
+        width: 79
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7addb20ee8ce44300800000000000000
+      internalID: 235573178920590759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_40
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 50
+        width: 56
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64713bba75a7cd70800000000000000
+      internalID: 9063394721651586155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strokedungeon0005_41
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 50
+        width: 268
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080a4ffa5e4fa67e0800000000000000
+      internalID: -1771334236080136064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      strokedungeon0005_0: 1296261535219152962
+      strokedungeon0005_1: 4790368909974301844
+      strokedungeon0005_10: 8373244622768896940
+      strokedungeon0005_11: -7109325920427771445
+      strokedungeon0005_12: 3598170274630907418
+      strokedungeon0005_13: -7267235900588684688
+      strokedungeon0005_14: 2030632349554384100
+      strokedungeon0005_15: -7985747106494288101
+      strokedungeon0005_16: -4230191498426922991
+      strokedungeon0005_17: 579027788859913420
+      strokedungeon0005_18: 7579343505740127562
+      strokedungeon0005_19: 2609909467028786362
+      strokedungeon0005_2: 6915566115937308918
+      strokedungeon0005_20: -5253515807036223405
+      strokedungeon0005_21: -2347762396768916915
+      strokedungeon0005_22: -4729475804285866647
+      strokedungeon0005_23: -4672467210827859314
+      strokedungeon0005_24: 8324647885794132382
+      strokedungeon0005_25: 2857711245029458045
+      strokedungeon0005_26: 4692210308840970370
+      strokedungeon0005_27: -4128995659433071996
+      strokedungeon0005_28: 8177969041693451994
+      strokedungeon0005_29: -1053444350168247572
+      strokedungeon0005_3: 1463381669011576796
+      strokedungeon0005_30: 8899153600366618424
+      strokedungeon0005_31: -4182843261658142318
+      strokedungeon0005_32: 1219394440860149476
+      strokedungeon0005_33: -7902122168562295290
+      strokedungeon0005_34: -7375163785039537190
+      strokedungeon0005_35: -8299009892124209030
+      strokedungeon0005_36: -2015053665637964464
+      strokedungeon0005_37: -8662564883722613410
+      strokedungeon0005_38: -3155729947572245479
+      strokedungeon0005_39: 235573178920590759
+      strokedungeon0005_4: -8913310694713623627
+      strokedungeon0005_40: 9063394721651586155
+      strokedungeon0005_41: -1771334236080136064
+      strokedungeon0005_5: 2197618421925501963
+      strokedungeon0005_6: -8740809466918335119
+      strokedungeon0005_7: -7146032144369614180
+      strokedungeon0005_8: -6374269625992355272
+      strokedungeon0005_9: 7425343065819380044
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
