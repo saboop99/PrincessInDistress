@@ -20,20 +20,9 @@ public class Player : MonoBehaviour
     }
 
     void Update()
-    {
-        // Coleta o input do teclado (clássico)
-        movement.x = Input.GetAxisRaw("Horizontal");
-
-        isSprinting = Input.GetKey(KeyCode.LeftShift);
-
-        // Faz o personagem pular ao apertar Espaço
-        if (Input.GetButtonDown("Jump"))
-        {
-            if (isGrounded == true)
-            {
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            }
-        }
+    { 
+        walkAndSprint();
+        Jump();
     }
 
     // Checagem de chão sendo feita para controle de pulo do player
@@ -58,4 +47,28 @@ public class Player : MonoBehaviour
         float speed = isSprinting ? sprintSpeed : moveSpeed;
         rb.linearVelocity = new Vector2(movement.x * speed, rb.linearVelocity.y);
     }
+
+    private void Jump()
+    {
+        // Faz o personagem pular ao apertar Espaço
+        if (Input.GetButtonDown("Jump"))
+        {
+            if (isGrounded == true)
+            {
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            }
+        }
+
+    }
+
+    private void walkAndSprint()
+    // Coleta o input do teclado (clássico)
+    {
+        movement.x = Input.GetAxisRaw("Horizontal");
+
+        isSprinting = Input.GetKey(KeyCode.LeftShift);
+    }
+
+    
 }
+
