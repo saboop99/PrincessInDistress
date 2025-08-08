@@ -9,13 +9,15 @@ public class Player : MonoBehaviour
     public float jumpForce = 20f;
     private bool isGrounded = false;
     private bool isSprinting = false;
+    private bool facingRight = true;
+    private Animator anim;
 
     private Rigidbody2D rb;
     private Vector2 movement;
 
     void Start()
     {
-        //Pegando o rigidbody do objeto
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -46,6 +48,10 @@ public class Player : MonoBehaviour
     {
         float speed = isSprinting ? sprintSpeed : moveSpeed;
         rb.linearVelocity = new Vector2(movement.x * speed, rb.linearVelocity.y);
+
+        float currentSpeed = Mathf.Abs(movement.x * speed);
+        anim.SetFloat("speedAnim", currentSpeed);
+
     }
 
     private void Jump()
@@ -64,11 +70,31 @@ public class Player : MonoBehaviour
     private void walkAndSprint()
     // Coleta o input do teclado (clássico)
     {
+        
+
         movement.x = Input.GetAxisRaw("Horizontal");
 
         isSprinting = Input.GetKey(KeyCode.LeftShift);
+
+        if (movement.x > 0 && facingRight == false)
+        {
+            Flip();
+        }
+        else if (movement.x < 0 && facingRight == true)
+        {
+            Flip();
+        }
     }
 
-    
+    // Método flip usado para virar o personagem, cada vez que é chamado, muda onde o personagem está apontando conforme a boolean facingRight
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 scale = transform.localScale;
+        scale.x = scale.x * -1;
+        transform.localScale = scale;
+    }
+
+
 }
 
