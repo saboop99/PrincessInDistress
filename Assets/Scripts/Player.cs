@@ -23,8 +23,14 @@ public class Player : MonoBehaviour
 
     void Update()
     { 
+        // ----------- Move -----------
         walkAndSprint();
+
+        // ----------- Jump -----------
         Jump();
+        anim.SetFloat("jumpSpeed", rb.linearVelocityY);
+        // se isGrounded = true, isJumping = false, e vice versa
+        anim.SetBool("isJumping", !isGrounded);
     }
 
     // Checagem de chão sendo feita para controle de pulo do player
@@ -61,10 +67,22 @@ public class Player : MonoBehaviour
         {
             if (isGrounded == true)
             {
+                
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                anim.SetBool("isJumping", true);
+                //anim.SetFloat("jumpSpeed", rb.linearVelocityY);
             }
+
+            
         }
 
+        //anim.SetFloat("jumpSpeed", rb.linearVelocityY);
+
+        if (isGrounded)
+        {
+            anim.SetBool("isJumping", false);           
+        }
+       
     }
 
     private void walkAndSprint()
