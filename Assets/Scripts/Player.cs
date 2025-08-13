@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public float jumpForce = 20f;
     private bool isGrounded = false;
     private bool isSprinting = false;
+    private bool isMoving = false;
     private bool facingRight = true;
     private Animator anim;
 
@@ -56,7 +57,9 @@ public class Player : MonoBehaviour
         rb.linearVelocity = new Vector2(movement.x * speed, rb.linearVelocity.y);
 
         float currentSpeed = Mathf.Abs(movement.x * speed);
+        isMoving = movement.x != 0;
         anim.SetFloat("speedAnim", currentSpeed);
+        anim.SetBool("isSprinting", isSprinting && isMoving);
 
     }
 
