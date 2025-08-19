@@ -443,8 +443,8 @@ TextureImporter:
         y: 555
         width: 21
         height: 31
-      alignment: 9
-      pivot: {x: 0.6137161, y: 0.52027154}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -531,8 +531,8 @@ TextureImporter:
         y: 555
         width: 21
         height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5327381, y: 0.7059167}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -597,8 +597,8 @@ TextureImporter:
         y: 518
         width: 19
         height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5327381, y: 0.7059167}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2952,6 +2952,7 @@ TextureImporter:
       adventurer-v1.5-Sheet_110: -2005489889676191732
       adventurer-v1.5-Sheet_111: -6100427877554654322
       adventurer-v1.5-Sheet_112: 2979789710812743995
+      adventurer-v1.5-Sheet_113: 317974416
       adventurer-v1.5-Sheet_12: 4767782445854341248
       adventurer-v1.5-Sheet_13: -2021519671248309078
       adventurer-v1.5-Sheet_14: 101571700091508751
