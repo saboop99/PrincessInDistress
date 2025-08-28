@@ -1,5 +1,120 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &434604375864588875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2962994953100522898}
+  - component: {fileID: 6100630019665448210}
+  m_Layer: 0
+  m_Name: Attack
+  m_TagString: Player1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2962994953100522898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434604375864588875}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.526, y: -0.108, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5993485395640810017}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &6100630019665448210
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434604375864588875}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.17489147, y: 0.7172768}
+      - {x: -0.48190928, y: 0.7145972}
+      - {x: -0.51030594, y: 0.71610236}
+      - {x: -0.5073385, y: 0.6711993}
+      - {x: -0.34310722, y: 0.5871072}
+      - {x: -0.30138922, y: 0.5417774}
+      - {x: -0.2307787, y: 0.52986693}
+      - {x: -0.22836494, y: 0.46046543}
+      - {x: -0.18412924, y: 0.41949534}
+      - {x: -0.09786749, y: 0.28989172}
+      - {x: -0.13991928, y: 0.16500735}
+      - {x: -0.14389753, y: 0.08632326}
+      - {x: -0.249784, y: -0.10639763}
+      - {x: -0.28291702, y: -0.14906573}
+      - {x: -0.34052134, y: -0.16000295}
+      - {x: -0.3586731, y: -0.19446445}
+      - {x: -0.9155264, y: -0.19478846}
+      - {x: -0.9167571, y: -0.12172961}
+      - {x: -0.975194, y: -0.05944872}
+      - {x: -1.2657466, y: -0.3339188}
+      - {x: -1.2722464, y: -0.40748453}
+      - {x: -1.0078111, y: -0.42003536}
+      - {x: -0.99710417, y: -0.46040392}
+      - {x: -0.7458687, y: -0.4642496}
+      - {x: -0.70767975, y: -0.49768686}
+      - {x: -0.26536554, y: -0.5018059}
+      - {x: -0.043142557, y: -0.4116187}
+      - {x: 0.2066145, y: -0.17726374}
+      - {x: 0.21348679, y: -0.06977725}
+      - {x: 0.25097394, y: -0.04518771}
+      - {x: 0.25746465, y: 0.300205}
+      - {x: 0.22240281, y: 0.33144546}
+      - {x: 0.1937344, y: 0.45405865}
+      - {x: 0.053732395, y: 0.57726145}
+      - {x: -0.047339678, y: 0.67650676}
+      - {x: -0.110111475, y: 0.69676965}
+  m_UseDelaunayMesh: 0
 --- !u!1 &662134498419027205
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +242,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8891580263743634887}
+  - {fileID: 2962994953100522898}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5937189009153227411
@@ -265,7 +381,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.6137161, y: 0.52027154}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.875, y: 1.2916666}
     newSize: {x: 0.875, y: 1.2916666}
     adaptiveTilingThreshold: 0.5

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour
     private bool facingRight = true;
     public Collider2D standingCollider;
     public Collider2D duckCollider;
+    public Collider2D attackCollider;
     private Animator anim;
 
     private Rigidbody2D rb;
@@ -39,6 +41,8 @@ public class Player : MonoBehaviour
 
         // ----------- Duck -----------
         Duck();
+
+        Attack();
     }
 
     // Checagem de chão sendo feita para controle de pulo do player
@@ -60,6 +64,7 @@ public class Player : MonoBehaviour
     // Definição da velocidade do jogador, calculando entre Correr e Andar
     void FixedUpdate()
     {
+        // Se isSpriting = true, setar sprintSpeed, se = false, setar moveSpeed
         float speed = isSprinting ? sprintSpeed : moveSpeed;
 
         // só se move se não estiver agachado
@@ -85,27 +90,46 @@ public class Player : MonoBehaviour
 
     }
 
+    // Método Attack dá start ao método attackRoutine, que é um padrão usado para dar uma "pausa" sem o jogo travar, estou usando isso para deixar o ataque do personagem mais fluído e mais real, diferente de usar apenas Bool
+    private void Attack()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            StartCoroutine(attackRoutine());
+        }   
+    }
+
+    private IEnumerator attackRoutine()
+    {
+        attackCollider.enabled = true;
+        anim.SetBool("isAttacking", true);
+
+        yield return new WaitForSeconds(0.4f);
+
+        attackCollider.enabled = false;
+        anim.SetBool("isAttacking", false);
+    }
+
     private void Jump()
     {
         // Faz o personagem pular ao apertar Espaço
         if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded == true)
-            {
-                
+            { 
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 anim.SetBool("isJumping", true);
-                //anim.SetFloat("jumpSpeed", rb.linearVelocityY);
-            }
 
-            
+                // Cancelando ataque caso pule
+                attackCollider.enabled = false;
+                anim.SetBool("isAttacking", false);
+            }   
         }
 
         if (isGrounded)
         {
             anim.SetBool("isJumping", false);           
-        }
-       
+        } 
     }
 
     private void Duck()
@@ -117,6 +141,10 @@ public class Player : MonoBehaviour
             duckCollider.enabled = true;
             isDucking = true;
             anim.SetBool("isDucking", true);
+
+            // Cancelando ataque caso agache
+            attackCollider.enabled = false;
+            anim.SetBool("isAttacking", false);
 
             //rb.linearVelocity = Vector2.zero;
         }
@@ -133,10 +161,7 @@ public class Player : MonoBehaviour
     private void walkAndSprint()
     // Coleta o input do teclado (clássico)
     {
-        
-
         movement.x = Input.GetAxisRaw("Horizontal");
-
         isSprinting = Input.GetKey(KeyCode.LeftShift);
 
         if (movement.x > 0 && facingRight == false)
@@ -147,6 +172,8 @@ public class Player : MonoBehaviour
         {
             Flip();
         }
+
+
     }
 
     // Método flip usado para virar o personagem, cada vez que é chamado, muda onde o personagem está apontando conforme a boolean facingRight
