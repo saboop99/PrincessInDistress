@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -15,6 +16,7 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+
         // Move o inimigo na direção do alvo
         transform.position = Vector2.MoveTowards(transform.position, target.position, patrolSpeed * Time.deltaTime);
 

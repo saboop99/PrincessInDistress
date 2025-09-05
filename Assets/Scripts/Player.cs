@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     private bool isMoving = false;
     private bool isDucking = false;
     private bool facingRight = true;
+    private bool isAttacking = false;
+    private bool isJumping = false;
     public Collider2D standingCollider;
     public Collider2D duckCollider;
     public Collider2D attackCollider;
@@ -67,8 +69,8 @@ public class Player : MonoBehaviour
         // Se isSpriting = true, setar sprintSpeed, se = false, setar moveSpeed
         float speed = isSprinting ? sprintSpeed : moveSpeed;
 
-        // só se move se não estiver agachado
-        if (!isDucking)
+        // só se move se não estiver agachado ou atacando
+        if (!isDucking && !isAttacking)
         {
             rb.linearVelocity = new Vector2(movement.x * speed, rb.linearVelocity.y);
 
@@ -76,18 +78,31 @@ public class Player : MonoBehaviour
             isMoving = movement.x != 0;
             anim.SetFloat("speedAnim", currentSpeed);
             anim.SetBool("isSprinting", isSprinting && isMoving);
+            // Ativa o collider normal
+            standingCollider.enabled = true;
+            duckCollider.enabled = false;
         }
-        // se estiver agachado, zera o movimento todo
+
+        // se agachar ou atacar, zera o movimento todo
         else
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // zera o movimento horizontal
             isMoving = false;
             anim.SetFloat("speedAnim", 0);
             anim.SetBool("isSprinting", false);
+
+            if (isJumping)
+            {
+                Debug.Log("pulo");
+            }
+
+            if (isDucking)
+            {
+                standingCollider.enabled = false;
+                // Ativa o collider do Duck
+                duckCollider.enabled = true;
+            }
         }
-
-       
-
     }
 
     // Método Attack dá start ao método attackRoutine, que é um padrão usado para dar uma "pausa" sem o jogo travar, estou usando isso para deixar o ataque do personagem mais fluído e mais real, diferente de usar apenas Bool
@@ -101,13 +116,19 @@ public class Player : MonoBehaviour
 
     private IEnumerator attackRoutine()
     {
+        if (!isJumping)
+        {
+
+        }
         attackCollider.enabled = true;
         anim.SetBool("isAttacking", true);
-
-        yield return new WaitForSeconds(0.4f);
+        isAttacking = true;
+        
+        yield return new WaitForSeconds(0.2f);
 
         attackCollider.enabled = false;
         anim.SetBool("isAttacking", false);
+        isAttacking = false;
     }
 
     private void Jump()
@@ -119,26 +140,26 @@ public class Player : MonoBehaviour
             { 
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 anim.SetBool("isJumping", true);
+                isJumping = true;
 
                 // Cancelando ataque caso pule
                 attackCollider.enabled = false;
                 anim.SetBool("isAttacking", false);
+                isAttacking = false;
             }   
         }
 
         if (isGrounded)
         {
+            isJumping = false;
             anim.SetBool("isJumping", false);           
         } 
     }
 
     private void Duck()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) )
         {
-            standingCollider.enabled = false;     
-            // Ativa o collider do Duck
-            duckCollider.enabled = true;
             isDucking = true;
             anim.SetBool("isDucking", true);
 
@@ -150,9 +171,6 @@ public class Player : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.S))
         {
-            // Ativa o collider normal
-            standingCollider.enabled = true;
-            duckCollider.enabled = false;
             isDucking = false;
             anim.SetBool("isDucking", false);
         }
