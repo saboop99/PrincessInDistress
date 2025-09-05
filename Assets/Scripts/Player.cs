@@ -91,11 +91,6 @@ public class Player : MonoBehaviour
             anim.SetFloat("speedAnim", 0);
             anim.SetBool("isSprinting", false);
 
-            if (isJumping)
-            {
-                Debug.Log("pulo");
-            }
-
             if (isDucking)
             {
                 standingCollider.enabled = false;
@@ -108,7 +103,8 @@ public class Player : MonoBehaviour
     // Método Attack dá start ao método attackRoutine, que é um padrão usado para dar uma "pausa" sem o jogo travar, estou usando isso para deixar o ataque do personagem mais fluído e mais real, diferente de usar apenas Bool
     private void Attack()
     {
-        if (Input.GetMouseButtonDown(0))
+        // Ataca ao apertar o botão esquerdo do mouse, porém só se estiver em contato com o chão
+        if (Input.GetMouseButtonDown(0) && isGrounded && !isDucking)
         {
             StartCoroutine(attackRoutine());
         }   
@@ -116,10 +112,6 @@ public class Player : MonoBehaviour
 
     private IEnumerator attackRoutine()
     {
-        if (!isJumping)
-        {
-
-        }
         attackCollider.enabled = true;
         anim.SetBool("isAttacking", true);
         isAttacking = true;
