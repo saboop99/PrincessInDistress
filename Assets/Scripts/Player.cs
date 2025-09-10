@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
     private bool isDucking = false;
     private bool facingRight = true;
     private bool isAttacking = false;
-    private bool isJumping = false;
     public Collider2D standingCollider;
     public Collider2D duckCollider;
     public Collider2D attackCollider;
@@ -84,19 +83,33 @@ public class Player : MonoBehaviour
         }
 
         // se agachar ou atacar, zera o movimento todo
-        else
+        else if (isDucking && isGrounded)
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // zera o movimento horizontal
             isMoving = false;
             anim.SetFloat("speedAnim", 0);
             anim.SetBool("isSprinting", false);
+            standingCollider.enabled = false;
+            // Ativa o collider do Duck
+            duckCollider.enabled = true;
+        }
 
-            if (isDucking)
-            {
-                standingCollider.enabled = false;
-                // Ativa o collider do Duck
-                duckCollider.enabled = true;
-            }
+        else if(isDucking && !isGrounded)
+        {
+            //moveSpeed = moveSpeed / 2;
+            rb.linearVelocity = new Vector2(movement.x * speed, rb.linearVelocity.y);
+
+            float currentSpeed = Mathf.Abs(movement.x * speed);
+            isMoving = movement.x != 0;
+            anim.SetFloat("speedAnim", currentSpeed);
+        }
+
+        else if (isAttacking && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // zera o movimento horizontal
+            isMoving = false;
+            anim.SetFloat("speedAnim", 0);
+            anim.SetBool("isSprinting", false);
         }
     }
 
@@ -104,7 +117,7 @@ public class Player : MonoBehaviour
     private void Attack()
     {
         // Ataca ao apertar o botão esquerdo do mouse, porém só se estiver em contato com o chão
-        if (Input.GetMouseButtonDown(0) && isGrounded && !isDucking)
+        if (Input.GetMouseButtonDown(0))
         {
             StartCoroutine(attackRoutine());
         }   
@@ -132,7 +145,7 @@ public class Player : MonoBehaviour
             { 
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 anim.SetBool("isJumping", true);
-                isJumping = true;
+              
 
                 // Cancelando ataque caso pule
                 attackCollider.enabled = false;
@@ -143,7 +156,7 @@ public class Player : MonoBehaviour
 
         if (isGrounded)
         {
-            isJumping = false;
+           
             anim.SetBool("isJumping", false);           
         } 
     }
